@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+	#nav-bar {
+	position: fixed;
+	top:0;
+}
+
+@media only screen and (max-width: 600px) {
+	#nav-bar {
+		background-color: yellow;
+	}
+}
+
+.flex-container {
+	display : flex;
+	flex-direction : row;
+}
+	</style>
   </head>
 
   <body>
@@ -24,14 +41,14 @@
 	<header id="header">
 		<img id="header-img" src="https://www.designfreelogoonline.com/wp-content/uploads/2016/03/00106-3D-company-logo-design-free-logo-online-Template-04.png" />
 		<nav id = "nav-bar" class = "flex-container">
-			<a class= "nav-link" href="#part1">
-			Test1
+			<a class= "nav-link" href="#video">
+			Video
 			</a>
-			<a class= "nav-link" href="#part2">
-			Test2
+			<a class= "nav-link" href="#form">
+			Form
 			</a>
-			<a class= "nav-link" href="#part3">
-			Test3
+			<a class= "nav-link" href="#submit">
+			Submit
 			</a>
 		
 		</nav>
@@ -43,7 +60,7 @@
 
 	<form id ="form" action ="https://www.freecodecamp.com/email-submit">
 	Email </br>
-	<input type = "email" id = "email" placeholder="Email">
+	<input type = "email" name="email" id = "email" placeholder="Email">
 	Submit </br>
 	<input id = "submit" type = "submit" value ="Submit">
 
